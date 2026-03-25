@@ -1,0 +1,111 @@
+** sch_path: /home/iappiah/tt_project2_practicals/xschem/ic_7408_testbench.sch
+**.subckt ic_7408_testbench 1A GND 1Y 1B 2A 2B 3A 3B 4A 4B 2Y 3Y 4Y VCC
+*.ipin 1A
+*.iopin GND
+*.opin 1Y
+*.ipin 1B
+*.ipin 2A
+*.ipin 2B
+*.ipin 3A
+*.ipin 3B
+*.ipin 4A
+*.ipin 4B
+*.opin 2Y
+*.opin 3Y
+*.opin 4Y
+*.iopin VCC
+V1 VCC GND 1.8
+V2 1A GND pulse(0 1.8 1u 1n 1n 2u 4u)
+V3 1B GND pulse(0 1.8 1u 1n 1n 2u 4u)
+R1 out_1y_before 1Y 1k
+C1 1Y GND 10p
+x1 1A 1B out_1y_before 2A 2B 2Y GND 3A 3B 3Y 4A 4B 4Y net1 AND_IC_TopLevel
+Vmeas VCC net1 0
+.save i(vmeas)
+V4 2A GND 1.8
+V5 2B GND 1.8
+V6 3A GND 1.8
+V7 3B GND 1.8
+V8 4A GND 1.8
+V9 4B GND 1.8
+R2 out_1y_before1 1Y_parax 1k
+C2 1Y_parax GND 10p
+x2 1A 1B out_1y_before1 2Y_out 3A 3B 3Y_out 4A 4Y_out net2 2B 2A GND 4B AND_IC_TopLevel_parax
+Vmeas1 VCC net2 0
+.save i(vmeas1)
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+.lib /home/iappiah/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+
+
+
+.tran 10n 8u
+.save all
+
+.control
+run
+write 7408IC_final_testbench.raw
+
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  AND_IC_TopLevel.sym # of pins=14
+** sym_path: /home/iappiah/tt_project2_practicals/xschem/AND_IC_TopLevel.sym
+** sch_path: /home/iappiah/tt_project2_practicals/xschem/AND_IC_TopLevel.sch
+.subckt AND_IC_TopLevel 1A 1B 1Y 2A 2B 2Y GND 3A 3B 3Y 4A 4B 4Y VCC
+*.ipin 1A
+*.iopin GND
+*.opin 1Y
+*.ipin 1B
+*.ipin 2A
+*.ipin 2B
+*.ipin 3A
+*.ipin 3B
+*.ipin 4A
+*.ipin 4B
+*.opin 2Y
+*.opin 3Y
+*.opin 4Y
+*.iopin VCC
+x1 1A 1B 1Y VCC GND ic_7804_AND
+x2 2A 2B 2Y VCC GND ic_7804_AND
+x3 3A 3B 3Y VCC GND ic_7804_AND
+x4 4A 4B 4Y VCC GND ic_7804_AND
+.ends
+
+
+* expanding   symbol:  AND_IC_TopLevel_parax.sym # of pins=14
+** sym_path: /home/iappiah/tt_project2_practicals/xschem/AND_IC_TopLevel.sym
+.include /home/iappiah/tt_project2_practicals/mag/AND_IC_TopLevel.sim.spice
+
+* expanding   symbol:  ic_7804_AND.sym # of pins=5
+** sym_path: /home/iappiah/tt_project2_practicals/xschem/ic_7804_AND.sym
+** sch_path: /home/iappiah/tt_project2_practicals/xschem/ic_7804_AND.sch
+.subckt ic_7804_AND A B Y VCC GND
+*.ipin A
+*.opin Y
+*.ipin B
+*.iopin VCC
+*.iopin GND
+XM2 net1 A VCC VCC sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1
+XM3 net1 B VCC VCC sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1
+XM5 Y net1 VCC VCC sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1
+XM1 net1 A net2 GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1
+XM4 net2 B GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1
+XM6 Y net1 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1
+.ends
+
+.GLOBAL GND
+.end
