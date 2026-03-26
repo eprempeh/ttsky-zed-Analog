@@ -9,8 +9,6 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
-
 For SR LATCH
 This project implements an SR latch using two cross-coupled NOR gates. 
 The output of each NOR gate is fed back into one input of the other, forming a bistable circuit. 
@@ -33,8 +31,6 @@ ESD Protection: The design relies on the pre-installed ESD (Electrostatic Discha
 removing the need for internal protection diodes that could interfere with spice generation.
 
 ## How to test
-
-Explain how to use your project
 
 For SR LATCH
 1. Apply power (vdd and vss) to the circuit.
@@ -62,8 +58,6 @@ To verify the functionality of the 7408 AND IC, you must provide logic signals t
 5. Perform the same check for Gates 2, 3, and 4 using their respective pin mappings defined in the info.yaml 
 
 ## External hardware
-
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
 
 For AND gate IC 7408
 To interact with this project in a physical lab setting, the following external hardware is required:
