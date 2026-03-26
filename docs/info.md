@@ -11,7 +11,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 Explain how your project works
 
-#For SR LATCH
+For SR LATCH
 This project implements an SR latch using two cross-coupled NOR gates. 
 The output of each NOR gate is fed back into one input of the other, forming a bistable circuit. 
 
@@ -21,7 +21,7 @@ When both inputs are low, the latch holds its previous state due to the feedback
 
 The condition s=1 nad r=1 is invalid because it forces both outputs low and can lead to an undefined state when released.
 
-#For AND IC gate 7408
+For AND IC gate 7408
 The project is a custom silicon implementation of the classic 7408 Quad 2-input AND gate. 
 Unlike standard digital projects that use pre-designed logic libraries, this design was built from the transistor level using a CMOS analog design flow.
 
@@ -32,12 +32,11 @@ Signal Path: Inputs are received through the dedicated input pads, processed by 
 ESD Protection: The design relies on the pre-installed ESD (Electrostatic Discharge) protection provided by the Tiny Tapeout padring, 
 removing the need for internal protection diodes that could interfere with spice generation.
 
-
 ## How to test
 
 Explain how to use your project
 
-#For SR LATCH
+For SR LATCH
 1. Apply power (vdd and vss) to the circuit.
 2. Set both s and r to 0 --> the latch should hold its previous state.
 3. set s=1 and r=0 --> q should go high
@@ -49,7 +48,7 @@ You can verify using these operations:
 1. Simulation (transient analysis in xschem/ngspice)
 2. Observing q and qb on output pins in hardware  
 
-#For AND gate IC 7408
+For AND gate IC 7408
 To verify the functionality of the 7408 AND IC, you must provide logic signals to the input pairs and monitor the output state.
 
 1. Ensure the chip is powered with 1.8V on the VDPWR pin.
@@ -61,11 +60,12 @@ To verify the functionality of the 7408 AND IC, you must provide logic signals t
 4. Truth Table Validation: The output 1Y should only go High (1.8V) if both 1A AND 1B are High. In all other combinations (00, 01, 10, 11), the output must remain Low (0V).
 
 5. Perform the same check for Gates 2, 3, and 4 using their respective pin mappings defined in the info.yaml 
+
 ## External hardware
 
 List external hardware used in your project (e.g. PMOD, LED display, etc), if any
 
-#For AND gate IC 7408
+For AND gate IC 7408
 To interact with this project in a physical lab setting, the following external hardware is required:
 
 1. Logic Inputs: 8x Push buttons or DIP switches to provide logic states to pins ui[0:7].
@@ -76,10 +76,8 @@ To interact with this project in a physical lab setting, the following external 
 
 4. Power Supply: A stable 1.8V DC source if not using the regulated output from the Tiny Tapeout demonstration board.
 
-## ⚠️ Critical Note on Pin Connections
-Users must strictly adhere to the pin mapping defined in the **Pinout** section. Because this is a custom CMOS implementation, connecting an input signal to an output pin (or vice-versa) may result in incorrect logic states or electrical contention. Ensure your push buttons are connected to `ui_in` (inputs) and your LEDs to `uo_out` (outputs) to achieve the desired 7408 ANDlogic results.
 
-#For SR LATCH
+For SR LATCH
 No external hardware is required!
 
 The design operates as a standalone digital logic block and can be tested using simulation tools or integrated into a larger digital system.

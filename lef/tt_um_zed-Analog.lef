@@ -172,7 +172,6 @@ MACRO tt_um_zed-Analog
   PIN uio_oe[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 25.425999 ;
     PORT
       LAYER met4 ;
         RECT 49.990 224.760 50.290 225.760 ;
@@ -181,7 +180,6 @@ MACRO tt_um_zed-Analog
   PIN uio_oe[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 25.425999 ;
     PORT
       LAYER met4 ;
         RECT 47.230 224.760 47.530 225.760 ;
@@ -190,7 +188,6 @@ MACRO tt_um_zed-Analog
   PIN uio_oe[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 25.425999 ;
     PORT
       LAYER met4 ;
         RECT 44.470 224.760 44.770 225.760 ;
@@ -199,7 +196,6 @@ MACRO tt_um_zed-Analog
   PIN uio_oe[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 25.425999 ;
     PORT
       LAYER met4 ;
         RECT 41.710 224.760 42.010 225.760 ;
@@ -208,7 +204,6 @@ MACRO tt_um_zed-Analog
   PIN uio_oe[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 25.425999 ;
     PORT
       LAYER met4 ;
         RECT 38.950 224.760 39.250 225.760 ;
@@ -217,7 +212,6 @@ MACRO tt_um_zed-Analog
   PIN uio_oe[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 25.425999 ;
     PORT
       LAYER met4 ;
         RECT 36.190 224.760 36.490 225.760 ;
@@ -226,7 +220,6 @@ MACRO tt_um_zed-Analog
   PIN uio_oe[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 25.425999 ;
     PORT
       LAYER met4 ;
         RECT 33.430 224.760 33.730 225.760 ;
@@ -235,7 +228,6 @@ MACRO tt_um_zed-Analog
   PIN uio_oe[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 25.425999 ;
     PORT
       LAYER met4 ;
         RECT 30.670 224.760 30.970 225.760 ;
@@ -244,7 +236,6 @@ MACRO tt_um_zed-Analog
   PIN uio_out[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 25.425999 ;
     PORT
       LAYER met4 ;
         RECT 72.070 224.760 72.370 225.760 ;
@@ -253,7 +244,6 @@ MACRO tt_um_zed-Analog
   PIN uio_out[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 25.425999 ;
     PORT
       LAYER met4 ;
         RECT 69.310 224.760 69.610 225.760 ;
@@ -262,7 +252,6 @@ MACRO tt_um_zed-Analog
   PIN uio_out[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 25.425999 ;
     PORT
       LAYER met4 ;
         RECT 66.550 224.760 66.850 225.760 ;
@@ -271,7 +260,6 @@ MACRO tt_um_zed-Analog
   PIN uio_out[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 25.425999 ;
     PORT
       LAYER met4 ;
         RECT 63.790 224.760 64.090 225.760 ;
@@ -280,7 +268,6 @@ MACRO tt_um_zed-Analog
   PIN uio_out[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 25.425999 ;
     PORT
       LAYER met4 ;
         RECT 61.030 224.760 61.330 225.760 ;
@@ -289,7 +276,6 @@ MACRO tt_um_zed-Analog
   PIN uio_out[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 25.425999 ;
     PORT
       LAYER met4 ;
         RECT 58.270 224.760 58.570 225.760 ;
@@ -298,7 +284,6 @@ MACRO tt_um_zed-Analog
   PIN uio_out[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 25.425999 ;
     PORT
       LAYER met4 ;
         RECT 55.510 224.760 55.810 225.760 ;
@@ -307,7 +292,6 @@ MACRO tt_um_zed-Analog
   PIN uio_out[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 25.425999 ;
     PORT
       LAYER met4 ;
         RECT 52.750 224.760 53.050 225.760 ;
@@ -354,7 +338,6 @@ MACRO tt_um_zed-Analog
   PIN uo_out[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 25.425999 ;
     PORT
       LAYER met4 ;
         RECT 83.110 224.760 83.410 225.760 ;
@@ -363,7 +346,6 @@ MACRO tt_um_zed-Analog
   PIN uo_out[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 25.425999 ;
     PORT
       LAYER met4 ;
         RECT 80.350 224.760 80.650 225.760 ;
@@ -392,7 +374,7 @@ MACRO tt_um_zed-Analog
     USE POWER ;
     PORT
       LAYER met4 ;
-        RECT 155.780 5.130 157.760 220.890 ;
+        RECT 152.080 4.610 154.060 220.370 ;
     END
   END VDPWR
   PIN VGND
@@ -400,7 +382,7 @@ MACRO tt_um_zed-Analog
     USE GROUND ;
     PORT
       LAYER met4 ;
-        RECT -3.660 5.130 -1.660 220.890 ;
+        RECT 1.270 5.370 1.790 221.130 ;
     END
   END VGND
   OBS
@@ -411,11 +393,11 @@ MACRO tt_um_zed-Analog
       LAYER met1 ;
         RECT 11.235 69.020 146.125 217.835 ;
       LAYER met2 ;
-        RECT 11.265 71.240 152.195 222.230 ;
+        RECT 11.265 71.240 151.205 222.230 ;
       LAYER met3 ;
-        RECT 2.860 89.525 153.970 223.825 ;
+        RECT 5.075 89.525 152.520 223.825 ;
       LAYER met4 ;
-        RECT 0.000 224.360 30.270 225.570 ;
+        RECT 1.790 224.360 30.270 225.570 ;
         RECT 31.370 224.360 33.030 225.570 ;
         RECT 34.130 224.360 35.790 225.570 ;
         RECT 36.890 224.360 38.550 225.570 ;
@@ -458,17 +440,11 @@ MACRO tt_um_zed-Analog
         RECT 139.010 224.360 140.670 225.570 ;
         RECT 141.770 224.360 143.430 225.570 ;
         RECT 144.530 224.360 146.190 225.570 ;
-        RECT 147.290 224.360 157.900 225.570 ;
-        RECT 0.000 221.290 157.900 224.360 ;
-        RECT 0.000 215.605 155.380 221.290 ;
-        RECT -1.660 214.875 155.380 215.605 ;
-        RECT 0.000 170.995 155.380 214.875 ;
-        RECT -1.660 169.480 155.380 170.995 ;
-        RECT 0.000 111.440 155.380 169.480 ;
-        RECT -1.660 110.130 155.380 111.440 ;
-        RECT 0.000 90.870 155.380 110.130 ;
-        RECT -1.660 89.550 155.380 90.870 ;
-        RECT 0.000 5.130 155.380 89.550 ;
+        RECT 147.290 224.360 154.080 225.570 ;
+        RECT 1.790 221.530 154.080 224.360 ;
+        RECT 2.190 220.770 154.080 221.530 ;
+        RECT 2.190 4.970 151.680 220.770 ;
+        RECT 1.790 4.610 151.680 4.970 ;
   END
 END tt_um_zed-Analog
 END LIBRARY
