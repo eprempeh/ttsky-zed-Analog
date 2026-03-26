@@ -19,7 +19,7 @@ When s(set) is asserted high, the latch sets q=1 and qb=0.
 Wheh r(reset) is asserted high, the latch resets q=0 and qb=1.
 When both inputs are low, the latch holds its previous state due to the feedback structure.
 
-The condition s=1 nad r=1 is invalid because it forces both outputs low and can lead to an undefined state when released.
+The condition s=1 and r=1 is invalid because it forces both outputs low and can lead to an undefined state when released.
 
 For AND IC gate 7408
 The project is a custom silicon implementation of the classic 7408 Quad 2-input AND gate. 
@@ -68,9 +68,9 @@ List external hardware used in your project (e.g. PMOD, LED display, etc), if an
 For AND gate IC 7408
 To interact with this project in a physical lab setting, the following external hardware is required:
 
-1. Logic Inputs: 8x Push buttons or DIP switches to provide logic states to pins ui[0:7].
+1. Logic Inputs: 8x Push buttons or DIP switches to provide logic states to the input pins.
 
-2. Logic Indicators: 4x LEDs (with current-limiting resistors, typically 330Ω) connected to uo[0:3] to visualize the AND gate outputs.
+2. Logic Indicators: 4x LEDs (with current-limiting resistors, typically 330Ω) connected to the output pins to visualize the AND gate outputs.
 
 3. Breadboard/PMOD: A standard PMOD connector or breadboard interface to bridge the Tiny Tapeout carrier board to your external components.
 
@@ -80,8 +80,6 @@ To interact with this project in a physical lab setting, the following external 
 For SR LATCH
 No external hardware is required!
 
-The design operates as a standalone digital logic block and can be tested using simulation tools or integrated into a larger digital system.
-
-
+The design operates as a standalone digital logic block and can be tested using simulation tools or integrated into a larger digital system
 
 

@@ -127,63 +127,63 @@ vss                                        |vss
 Cell pin lists are equivalent.
 Device classes sr_latch and sr_latch are equivalent.
 
-Cell tt_um_zed-Analog (0) disconnected node: clk
-Cell tt_um_zed-Analog (0) disconnected node: ena
-Cell tt_um_zed-Analog (0) disconnected node: rst_n
-Cell tt_um_zed-Analog (0) disconnected node: uio_in[2]
-Cell tt_um_zed-Analog (0) disconnected node: uio_in[3]
-Cell tt_um_zed-Analog (0) disconnected node: uio_in[4]
-Cell tt_um_zed-Analog (0) disconnected node: uio_in[5]
-Cell tt_um_zed-Analog (0) disconnected node: uio_in[6]
-Cell tt_um_zed-Analog (0) disconnected node: uio_in[7]
-Cell tt_um_zed-Analog (1) disconnected node: uio_in[7]
-Cell tt_um_zed-Analog (1) disconnected node: uio_in[6]
-Cell tt_um_zed-Analog (1) disconnected node: uio_in[5]
-Cell tt_um_zed-Analog (1) disconnected node: uio_in[4]
-Cell tt_um_zed-Analog (1) disconnected node: uio_in[3]
-Cell tt_um_zed-Analog (1) disconnected node: uio_in[2]
-Cell tt_um_zed-Analog (1) disconnected node: ena
-Cell tt_um_zed-Analog (1) disconnected node: clk
-Cell tt_um_zed-Analog (1) disconnected node: rst_n
-Removing zero-valued device r from cell tt_um_zed-Analog (0) makes a better match
-Removing zero-valued device r from cell tt_um_zed-Analog (0) makes a better match
-Removing zero-valued device r from cell tt_um_zed-Analog (0) makes a better match
-Removing zero-valued device r from cell tt_um_zed-Analog (0) makes a better match
-Removing zero-valued device r from cell tt_um_zed-Analog (0) makes a better match
-Removing zero-valued device r from cell tt_um_zed-Analog (0) makes a better match
-Removing zero-valued device r from cell tt_um_zed-Analog (0) makes a better match
-Removing zero-valued device r from cell tt_um_zed-Analog (0) makes a better match
-Removing zero-valued device r from cell tt_um_zed-Analog (0) makes a better match
-Removing zero-valued device r from cell tt_um_zed-Analog (0) makes a better match
-Removing zero-valued device r from cell tt_um_zed-Analog (0) makes a better match
-Removing zero-valued device r from cell tt_um_zed-Analog (0) makes a better match
-Removing zero-valued device r from cell tt_um_zed-Analog (0) makes a better match
-Removing zero-valued device r from cell tt_um_zed-Analog (0) makes a better match
-Removing zero-valued device r from cell tt_um_zed-Analog (0) makes a better match
-Removing zero-valued device r from cell tt_um_zed-Analog (0) makes a better match
-Removing zero-valued device r from cell tt_um_zed-Analog (0) makes a better match
+Cell tt_um_zed_Analog (0) disconnected node: clk
+Cell tt_um_zed_Analog (0) disconnected node: ena
+Cell tt_um_zed_Analog (0) disconnected node: rst_n
+Cell tt_um_zed_Analog (0) disconnected node: uio_in[2]
+Cell tt_um_zed_Analog (0) disconnected node: uio_in[3]
+Cell tt_um_zed_Analog (0) disconnected node: uio_in[4]
+Cell tt_um_zed_Analog (0) disconnected node: uio_in[5]
+Cell tt_um_zed_Analog (0) disconnected node: uio_in[6]
+Cell tt_um_zed_Analog (0) disconnected node: uio_in[7]
+Cell tt_um_zed_Analog (1) disconnected node: uio_in[7]
+Cell tt_um_zed_Analog (1) disconnected node: uio_in[6]
+Cell tt_um_zed_Analog (1) disconnected node: uio_in[5]
+Cell tt_um_zed_Analog (1) disconnected node: uio_in[4]
+Cell tt_um_zed_Analog (1) disconnected node: uio_in[3]
+Cell tt_um_zed_Analog (1) disconnected node: uio_in[2]
+Cell tt_um_zed_Analog (1) disconnected node: ena
+Cell tt_um_zed_Analog (1) disconnected node: clk
+Cell tt_um_zed_Analog (1) disconnected node: rst_n
+Removing zero-valued device r from cell tt_um_zed_Analog (0) makes a better match
+Removing zero-valued device r from cell tt_um_zed_Analog (0) makes a better match
+Removing zero-valued device r from cell tt_um_zed_Analog (0) makes a better match
+Removing zero-valued device r from cell tt_um_zed_Analog (0) makes a better match
+Removing zero-valued device r from cell tt_um_zed_Analog (0) makes a better match
+Removing zero-valued device r from cell tt_um_zed_Analog (0) makes a better match
+Removing zero-valued device r from cell tt_um_zed_Analog (0) makes a better match
+Removing zero-valued device r from cell tt_um_zed_Analog (0) makes a better match
+Removing zero-valued device r from cell tt_um_zed_Analog (0) makes a better match
+Removing zero-valued device r from cell tt_um_zed_Analog (0) makes a better match
+Removing zero-valued device r from cell tt_um_zed_Analog (0) makes a better match
+Removing zero-valued device r from cell tt_um_zed_Analog (0) makes a better match
+Removing zero-valued device r from cell tt_um_zed_Analog (0) makes a better match
+Removing zero-valued device r from cell tt_um_zed_Analog (0) makes a better match
+Removing zero-valued device r from cell tt_um_zed_Analog (0) makes a better match
+Removing zero-valued device r from cell tt_um_zed_Analog (0) makes a better match
+Removing zero-valued device r from cell tt_um_zed_Analog (0) makes a better match
 Making another compare attempt.
 
-Cell tt_um_zed-Analog (0) disconnected node: clk
-Cell tt_um_zed-Analog (0) disconnected node: ena
-Cell tt_um_zed-Analog (0) disconnected node: rst_n
-Cell tt_um_zed-Analog (0) disconnected node: uio_in[2]
-Cell tt_um_zed-Analog (0) disconnected node: uio_in[3]
-Cell tt_um_zed-Analog (0) disconnected node: uio_in[4]
-Cell tt_um_zed-Analog (0) disconnected node: uio_in[5]
-Cell tt_um_zed-Analog (0) disconnected node: uio_in[6]
-Cell tt_um_zed-Analog (0) disconnected node: uio_in[7]
-Cell tt_um_zed-Analog (1) disconnected node: uio_in[7]
-Cell tt_um_zed-Analog (1) disconnected node: uio_in[6]
-Cell tt_um_zed-Analog (1) disconnected node: uio_in[5]
-Cell tt_um_zed-Analog (1) disconnected node: uio_in[4]
-Cell tt_um_zed-Analog (1) disconnected node: uio_in[3]
-Cell tt_um_zed-Analog (1) disconnected node: uio_in[2]
-Cell tt_um_zed-Analog (1) disconnected node: ena
-Cell tt_um_zed-Analog (1) disconnected node: clk
-Cell tt_um_zed-Analog (1) disconnected node: rst_n
+Cell tt_um_zed_Analog (0) disconnected node: clk
+Cell tt_um_zed_Analog (0) disconnected node: ena
+Cell tt_um_zed_Analog (0) disconnected node: rst_n
+Cell tt_um_zed_Analog (0) disconnected node: uio_in[2]
+Cell tt_um_zed_Analog (0) disconnected node: uio_in[3]
+Cell tt_um_zed_Analog (0) disconnected node: uio_in[4]
+Cell tt_um_zed_Analog (0) disconnected node: uio_in[5]
+Cell tt_um_zed_Analog (0) disconnected node: uio_in[6]
+Cell tt_um_zed_Analog (0) disconnected node: uio_in[7]
+Cell tt_um_zed_Analog (1) disconnected node: uio_in[7]
+Cell tt_um_zed_Analog (1) disconnected node: uio_in[6]
+Cell tt_um_zed_Analog (1) disconnected node: uio_in[5]
+Cell tt_um_zed_Analog (1) disconnected node: uio_in[4]
+Cell tt_um_zed_Analog (1) disconnected node: uio_in[3]
+Cell tt_um_zed_Analog (1) disconnected node: uio_in[2]
+Cell tt_um_zed_Analog (1) disconnected node: ena
+Cell tt_um_zed_Analog (1) disconnected node: clk
+Cell tt_um_zed_Analog (1) disconnected node: rst_n
 Subcircuit summary:
-Circuit 1: tt_um_zed-Analog                |Circuit 2: tt_um_zed-Analog                
+Circuit 1: tt_um_zed_Analog                |Circuit 2: tt_um_zed_Analog                
 -------------------------------------------|-------------------------------------------
 AND_IC_TopLevel (1)                        |AND_IC_TopLevel (1)                        
 sr_latch (1)                               |sr_latch (1)                               
@@ -193,7 +193,7 @@ Number of nets: 18                         |Number of nets: 18
 Netlists match uniquely.
 
 Subcircuit pins:
-Circuit 1: tt_um_zed-Analog                |Circuit 2: tt_um_zed-Analog                
+Circuit 1: tt_um_zed_Analog                |Circuit 2: tt_um_zed_Analog                
 -------------------------------------------|-------------------------------------------
 VDPWR                                      |VDPWR                                      
 VGND                                       |VGND                                       
@@ -242,7 +242,7 @@ uo_out[4]                                  |uo_out[4]
 uo_out[5]                                  |uo_out[5]                                  
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes tt_um_zed-Analog and tt_um_zed-Analog are equivalent.
+Device classes tt_um_zed_Analog and tt_um_zed_Analog are equivalent.
 
 Final result: Circuits match uniquely.
 .
