@@ -23,18 +23,18 @@ module tt_um_zed_Analog (
     AND_IC_TopLevel AND_IC_TopLevel_inst(
         .VCC (VDPWR),
         .GND (VGND),
-        .1A (ui_in[2]),
-        .1B (ui_in[3]),
-        .1Y (uo_out[3]),
-        .2A (ui_in[4]),
-        .2B (ui_in[5]),
-        .2Y (uo_out[2]),
-        .3A (ui_in[6]),
-        .3B (ui_in[7]),
-        .3Y (uo_out[6]),
-        .4A (uio_in[0]),
-        .4B (uio_in[1]),
-        .4Y (uo_out[7])
+        .\1A (ui_in[2]),
+        .\1B (ui_in[3]),
+        .\1Y (uo_out[3]),
+        .\2A (ui_in[4]),
+        .\2B (ui_in[5]),
+        .\2Y (uo_out[2]),
+        .\3A (ui_in[6]),
+        .\3B (ui_in[7]),
+        .\3Y (uo_out[6]),
+        .\4A (uio_in[0]),
+        .\4B (uio_in[1]),
+        .\4Y (uo_out[7])
     	);
 
     sr_latch sr_latch_inst(
