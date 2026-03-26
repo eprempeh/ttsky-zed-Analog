@@ -57,23 +57,22 @@ Xx2 vdd q qb r vss nor_gate
 XAND_IC_TopLevel_0 ui_in[2] ui_in[3] uo_out[3] ui_in[4] ui_in[5] uo_out[2] ui_in[6]
 + ui_in[7] uo_out[6] uio_in[0] uio_in[1] uo_out[7] VDPWR VGND AND_IC_TopLevel
 Xsr_latch_0 ui_in[0] uo_out[1] uo_out[0] ui_in[1] VGND VDPWR sr_latch
-R0 VGND uio_oe[1] 0.000000
-R1 VGND uio_out[4] 0.000000
-R2 VGND uio_oe[0] 0.000000
-R3 VGND uio_out[3] 0.000000
-R4 VGND uio_out[2] 0.000000
-R5 VGND uio_out[1] 0.000000
-R6 VGND uio_out[0] 0.000000
-R7 VGND uio_oe[6] 0.000000
-R8 VGND uio_oe[7] 0.000000
-R9 VGND uo_out[5] 0.000000
-R10 VGND uio_oe[5] 0.000000
-R11 VGND uo_out[4] 0.000000
-R12 VGND uio_out[7] 0.000000
-R13 VGND uio_oe[4] 0.000000
-R14 VGND uio_oe[3] 0.000000
-R15 VGND uio_out[6] 0.000000
-R16 VGND uio_oe[2] 0.000000
-R17 VGND uio_out[5] 0.000000
+R0 uo_out[5] uio_oe[0] 0.000000
+R1 uo_out[5] uio_out[3] 0.000000
+R2 uo_out[5] uio_out[2] 0.000000
+R3 uo_out[5] uio_out[1] 0.000000
+R4 uo_out[5] uio_out[0] 0.000000
+R5 uo_out[5] uio_oe[7] 0.000000
+R6 uo_out[5] uio_oe[5] 0.000000
+R7 uo_out[5] uio_oe[6] 0.000000
+R8 uo_out[5] uo_out[4] 0.000000
+R9 uo_out[5] uio_oe[4] 0.000000
+R10 uo_out[5] uio_out[7] 0.000000
+R11 uo_out[5] uio_out[6] 0.000000
+R12 uo_out[5] uio_oe[3] 0.000000
+R13 uo_out[5] uio_oe[2] 0.000000
+R14 uo_out[5] uio_out[5] 0.000000
+R15 uo_out[5] uio_oe[1] 0.000000
+R16 uo_out[5] uio_out[4] 0.000000
 .ends
 

@@ -162,7 +162,6 @@ Removing zero-valued device r from cell tt_um_zed-Analog (0) makes a better matc
 Removing zero-valued device r from cell tt_um_zed-Analog (0) makes a better match
 Removing zero-valued device r from cell tt_um_zed-Analog (0) makes a better match
 Removing zero-valued device r from cell tt_um_zed-Analog (0) makes a better match
-Removing zero-valued device r from cell tt_um_zed-Analog (0) makes a better match
 Making another compare attempt.
 
 Cell tt_um_zed-Analog (0) disconnected node: clk
@@ -197,7 +196,7 @@ Subcircuit pins:
 Circuit 1: tt_um_zed-Analog                |Circuit 2: tt_um_zed-Analog                
 -------------------------------------------|-------------------------------------------
 VDPWR                                      |VDPWR                                      
-uio_oe[0]                                  |uio_oe[0]                                  
+VGND                                       |VGND                                       
 ui_in[2]                                   |ui_in[2]                                   
 ui_in[3]                                   |ui_in[3]                                   
 uo_out[3]                                  |uo_out[3]                                  
@@ -223,6 +222,7 @@ uio_in[4]                                  |uio_in[4]
 uio_in[5]                                  |uio_in[5]                                  
 uio_in[6]                                  |uio_in[6]                                  
 uio_in[7]                                  |uio_in[7]                                  
+uio_oe[0]                                  |uio_oe[0]                                  
 uio_oe[1]                                  |uio_oe[1]                                  
 uio_oe[2]                                  |uio_oe[2]                                  
 uio_oe[3]                                  |uio_oe[3]                                  
@@ -240,7 +240,6 @@ uio_out[6]                                 |uio_out[6]
 uio_out[7]                                 |uio_out[7]                                 
 uo_out[4]                                  |uo_out[4]                                  
 uo_out[5]                                  |uo_out[5]                                  
-VGND                                       |VGND                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes tt_um_zed-Analog and tt_um_zed-Analog are equivalent.
