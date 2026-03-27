@@ -23,31 +23,31 @@ module tt_um_zed_Analog (
     AND_IC_TopLevel AND_IC_TopLevel_inst(
         .VCC (VDPWR),
         .GND (VGND),
-        .\1A (ui_in[2]),
-        .\1B (ui_in[3]),
-        .\1Y (uo_out[3]),
-        .\2A (ui_in[4]),
-        .\2B (ui_in[5]),
-        .\2Y (uo_out[2]),
-        .\3A (ui_in[6]),
-        .\3B (ui_in[7]),
-        .\3Y (uo_out[6]),
-        .\4A (uio_in[0]),
-        .\4B (uio_in[1]),
-        .\4Y (uo_out[7])
+        .A1 (ui_in[2]),
+        .B1 (ui_in[3]),
+        .Y1 (uo_out[1]),
+        .A2 (ui_in[1]),
+        .B2 (ui_in[0]),
+        .Y2 (uo_out[0]),
+        .A3 (ui_in[5]),
+        .B3 (ui_in[4]),
+        .Y3 (uo_out[2])
     	);
 
     sr_latch sr_latch_inst(
         .vdd (VDPWR),
         .vss (VGND),
-        .s (ui_in[0]),
-        .r (ui_in[1]),
-        .qb (uo_out[1]),
-        .q (uo_out[0])
+        .s (ui_in[7]),
+        .r (ui_in[6]),
+        .qb (uo_out[4]),
+        .q (uo_out[3])
     	);
 
-    assign uo_out[4] = VGND;
-    assign uo_out[5] = VGND;
+    
+    
+    assign uo_out[5] = VGND;		
+    assign uo_out[6] = VGND;
+    assign uo_out[7] = VGND;
 
     assign uio_out[0] = VGND;
     assign uio_out[1] = VGND;

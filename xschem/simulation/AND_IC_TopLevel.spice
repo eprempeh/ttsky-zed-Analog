@@ -1,23 +1,21 @@
-** sch_path: /home/iappiah/tt_project2_practicals/xschem/AND_IC_TopLevel.sch
-.subckt AND_IC_TopLevel 1A 1B 1Y 2A 2B 2Y GND 3A 3B 3Y 4A 4B 4Y VCC
-*.PININFO 1A:I GND:B 1Y:O 1B:I 2A:I 2B:I 3A:I 3B:I 4A:I 4B:I 2Y:O 3Y:O 4Y:O VCC:B
-x1 1A 1B 1Y VCC GND ic_7804_AND
-x2 2A 2B 2Y VCC GND ic_7804_AND
-x3 3A 3B 3Y VCC GND ic_7804_AND
-x4 4A 4B 4Y VCC GND ic_7804_AND
+** sch_path: /home/eprempeh/ttsky-zed-Analog/xschem/AND_IC_TopLevel.sch
+.subckt AND_IC_TopLevel A1 B1 Y1 A2 B2 Y2 GND A3 B3 Y3 VCC
+*.PININFO A1:I GND:B Y1:O B1:I A2:I B2:I A3:I Y2:O Y3:O VCC:B B3:I
+x1 A1 B1 Y1 VCC GND ic_7804_AND
+x2 A2 B2 Y2 VCC GND ic_7804_AND
+x3 A3 B3 Y3 VCC GND ic_7804_AND
 .ends
 
 * expanding   symbol:  ic_7804_AND.sym # of pins=5
-** sym_path: /home/iappiah/tt_project2_practicals/xschem/ic_7804_AND.sym
-** sch_path: /home/iappiah/tt_project2_practicals/xschem/ic_7804_AND.sch
+** sym_path: /home/eprempeh/ttsky-zed-Analog/xschem/ic_7804_AND.sym
+** sch_path: /home/eprempeh/ttsky-zed-Analog/xschem/ic_7804_AND.sch
 .subckt ic_7804_AND A B Y VCC GND
 *.PININFO A:I Y:O B:I VCC:B GND:B
-XM2 net1 A VCC VCC sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 m=1
-XM3 net1 B VCC VCC sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 m=1
-XM5 Y net1 VCC VCC sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 m=1
-XM1 net1 A net2 GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
-XM4 net2 B GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
-XM6 Y net1 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
+XM2 net1 A VCC VCC sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1
+XM3 net1 B VCC VCC sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1
+XM5 Y net1 VCC VCC sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1
+XM1 net1 A net2 GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1
+XM4 net2 B GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1
+XM6 Y net1 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1
 .ends
 
-.end

@@ -1,38 +1,28 @@
 ** sch_path: /home/eprempeh/ttsky-zed-Analog/xschem/ic_7408_testbench.sch
-**.subckt ic_7408_testbench 1A GND 1Y 1B 2A 2B 3A 3B 4A 4B 2Y 3Y 4Y VCC
-*.ipin 1A
+**.subckt ic_7408_testbench A1 GND Y1 B1 A2 B2 A3 Y2 Y3 VCC B3
+*.ipin A1
 *.iopin GND
-*.opin 1Y
-*.ipin 1B
-*.ipin 2A
-*.ipin 2B
-*.ipin 3A
-*.ipin 3B
-*.ipin 4A
-*.ipin 4B
-*.opin 2Y
-*.opin 3Y
-*.opin 4Y
+*.opin Y1
+*.ipin B1
+*.ipin A2
+*.ipin B2
+*.ipin A3
+*.opin Y2
+*.opin Y3
 *.iopin VCC
+*.ipin B3
 V1 VCC GND 1.8
-V2 1A GND pulse(0 1.8 1u 1n 1n 2u 4u)
-V3 1B GND pulse(0 1.8 1u 1n 1n 2u 4u)
-R1 out_1y_before 1Y 1k
-C1 1Y GND 10p
-x1 1A 1B out_1y_before 2A 2B 2Y GND 3A 3B 3Y 4A 4B 4Y net1 AND_IC_TopLevel
+V2 A1 GND pulse(0 1.8 1u 1n 1n 2u 4u)
+V3 B1 GND pulse(0 1.8 1u 1n 1n 2u 4u)
+R1 out_1y_before Y1 1k
+C1 Y1 GND 10p
 Vmeas VCC net1 0
 .save i(vmeas)
-V4 2A GND 1.8
-V5 2B GND 1.8
-V6 3A GND 1.8
-V7 3B GND 1.8
-V8 4A GND 1.8
-V9 4B GND 1.8
-R2 out_1y_before1 1Y_parax 1k
-C2 1Y_parax GND 10p
-x2 1A 1B out_1y_before1 2Y_out 3A 3B 3Y_out 4A 4Y_out net2 2B 2A GND 4B AND_IC_TopLevel_parax
-Vmeas1 VCC net2 0
-.save i(vmeas1)
+V4 A2 GND 1.8
+V5 B2 GND 1.8
+V6 B3 GND 1.8
+V7 A3 GND 1.8
+x1 A1 B1 out_1y_before A2 B2 Y2 GND A3 B3 Y3 net1 AND_IC_TopLevel
 **** begin user architecture code
 
 ** opencircuitdesign pdks install
@@ -47,7 +37,7 @@ Vmeas1 VCC net2 0
 
 .control
 run
-write 7408IC_final_testbench.raw
+write final_testbench.raw
 
 .endc
 
@@ -55,34 +45,26 @@ write 7408IC_final_testbench.raw
 **** end user architecture code
 **.ends
 
-* expanding   symbol:  AND_IC_TopLevel.sym # of pins=14
+* expanding   symbol:  AND_IC_TopLevel.sym # of pins=11
 ** sym_path: /home/eprempeh/ttsky-zed-Analog/xschem/AND_IC_TopLevel.sym
 ** sch_path: /home/eprempeh/ttsky-zed-Analog/xschem/AND_IC_TopLevel.sch
-.subckt AND_IC_TopLevel 1A 1B 1Y 2A 2B 2Y GND 3A 3B 3Y 4A 4B 4Y VCC
-*.ipin 1A
+.subckt AND_IC_TopLevel A1 B1 Y1 A2 B2 Y2 GND A3 B3 Y3 VCC
+*.ipin A1
 *.iopin GND
-*.opin 1Y
-*.ipin 1B
-*.ipin 2A
-*.ipin 2B
-*.ipin 3A
-*.ipin 3B
-*.ipin 4A
-*.ipin 4B
-*.opin 2Y
-*.opin 3Y
-*.opin 4Y
+*.opin Y1
+*.ipin B1
+*.ipin A2
+*.ipin B2
+*.ipin A3
+*.opin Y2
+*.opin Y3
 *.iopin VCC
-x1 1A 1B 1Y VCC GND ic_7804_AND
-x2 2A 2B 2Y VCC GND ic_7804_AND
-x3 3A 3B 3Y VCC GND ic_7804_AND
-x4 4A 4B 4Y VCC GND ic_7804_AND
+*.ipin B3
+x1 A1 B1 Y1 VCC GND ic_7804_AND
+x2 A2 B2 Y2 VCC GND ic_7804_AND
+x3 A3 B3 Y3 VCC GND ic_7804_AND
 .ends
 
-
-* expanding   symbol:  AND_IC_TopLevel_parax.sym # of pins=14
-** sym_path: /home/eprempeh/ttsky-zed-Analog/xschem/AND_IC_TopLevel.sym
-.include /home/eprempeh/ttsky-zed-Analog/mag/AND_IC_TopLevel.sim.spice
 
 * expanding   symbol:  ic_7804_AND.sym # of pins=5
 ** sym_path: /home/eprempeh/ttsky-zed-Analog/xschem/ic_7804_AND.sym

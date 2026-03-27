@@ -13,45 +13,21 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=9.27223e-07
-x2=2.440087e-06
-divx=5
-subdivx=1
-xlabmag=1.0
-ylabmag=1.0
-node="1a
-1y
-1y_parax"
-
-dataset=-1
-unitx=1
-logx=0
-logy=0
-color="5 8 12"}
-B 2 0 -790 620 -440 {flags=graph
-y1=0
-y2=2
-ypos1=0
-ypos2=2
-divy=5
-subdivy=1
-unity=1
-x1=9.27223e-07
-x2=2.440087e-06
+x1=0
+x2=8e-06
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
 
-
 dataset=-1
 unitx=1
 logx=0
 logy=0
-
-color="5 12"
-node="i(vmeas)
-i(vmeas1)"}
+color="4 12 12"
+node="y1
+i(vmeas)
+out_1y_before"}
 N 160 140 160 160 {
 lab=VCC}
 N 160 220 160 240 {
@@ -59,15 +35,15 @@ lab=GND}
 N 160 80 160 100 {
 lab=GND}
 N 160 0 160 20 {
-lab=1A}
+lab=A1}
 N 160 -50 160 -30 {
 lab=GND}
 N 160 -130 160 -110 {
-lab=1B}
+lab=B1}
 N -420 -290 -320 -290 {
-lab=1Y}
+lab=Y1}
 N -350 -290 -350 -260 {
-lab=1Y}
+lab=Y1}
 N -350 -200 -350 -180 {
 lab=GND}
 N -260 -290 -180 -290 {
@@ -75,71 +51,28 @@ lab=out_1y_before}
 N 160 -200 160 -180 {
 lab=GND}
 N 160 -280 160 -260 {
-lab=2A}
+lab=A2}
 N 160 -330 160 -310 {
 lab=GND}
 N 160 -410 160 -390 {
-lab=2B}
+lab=B2}
 N 370 -200 370 -180 {
 lab=GND}
 N 370 -280 370 -260 {
-lab=3A}
+lab=B3}
 N 370 -330 370 -310 {
 lab=GND}
 N 370 -410 370 -390 {
-lab=3B}
-N 370 80 370 100 {
-lab=GND}
-N 370 0 370 20 {
-lab=4A}
-N 370 -50 370 -30 {
-lab=GND}
-N 370 -130 370 -110 {
-lab=4B}
-N -440 30 -340 30 {
-lab=1Y_parax}
-N -370 30 -370 60 {
-lab=1Y_parax}
-N -370 120 -370 140 {
-lab=GND}
-N -280 30 -200 30 {
-lab=out_1y_before1}
+lab=A3}
 C {devices/vsource.sym} 160 190 0 0 {name=V1 value=1.8 savecurrent=false}
 C {devices/vsource.sym} 160 50 0 0 {name=V2 value="pulse(0 1.8 1u 1n 1n 2u 4u)" savecurrent=false}
 C {devices/vsource.sym} 160 -80 0 0 {name=V3 value="pulse(0 1.8 1u 1n 1n 2u 4u)" savecurrent=false}
-C {devices/lab_pin.sym} 160 0 0 0 {name=p39 sig_type=std_logic lab=1A}
-C {devices/lab_pin.sym} 160 -130 0 0 {name=p40 sig_type=std_logic lab=1B}
-C {devices/ipin.sym} -580 -310 0 0 {name=p1 lab=1A}
-C {devices/iopin.sym} -640 -130 0 0 {name=p2 lab=GND}
-C {devices/opin.sym} -630 -250 0 0 {name=p3 lab=1Y}
-C {devices/ipin.sym} -580 -280 0 0 {name=p6 lab=1B}
-C {devices/ipin.sym} -580 -220 0 0 {name=p7 lab=2A}
-C {devices/ipin.sym} -580 -190 0 0 {name=p8 lab=2B}
-C {devices/ipin.sym} -580 -90 0 0 {name=p9 lab=3A}
-C {devices/ipin.sym} -580 -60 0 0 {name=p10 lab=3B}
-C {devices/ipin.sym} -580 0 0 0 {name=p11 lab=4A}
-C {devices/ipin.sym} -580 30 0 0 {name=p12 lab=4B}
-C {devices/opin.sym} -630 -160 0 0 {name=p13 lab=2Y}
-C {devices/opin.sym} -630 -30 0 0 {name=p14 lab=3Y}
-C {devices/opin.sym} -630 60 0 0 {name=p15 lab=4Y}
-C {devices/iopin.sym} -640 90 0 0 {name=p16 lab=VCC}
-C {devices/lab_pin.sym} -180 -330 0 0 {name=p18 sig_type=std_logic lab=1A}
-C {devices/lab_pin.sym} -180 -310 0 0 {name=p19 sig_type=std_logic lab=1B}
-C {devices/lab_pin.sym} -420 -290 0 0 {name=p20 sig_type=std_logic lab=1Y}
-C {devices/lab_pin.sym} -20 -210 0 1 {name=p22 sig_type=std_logic lab=3Y}
-C {devices/lab_pin.sym} -20 -270 0 1 {name=p23 sig_type=std_logic lab=4Y}
-C {devices/lab_pin.sym} -180 -270 2 1 {name=p24 sig_type=std_logic lab=2A}
-C {devices/lab_pin.sym} -180 -250 2 1 {name=p25 sig_type=std_logic lab=2B}
-C {devices/lab_pin.sym} -20 -250 0 1 {name=p26 sig_type=std_logic lab=3A}
-C {devices/lab_pin.sym} -20 -230 0 1 {name=p27 sig_type=std_logic lab=3B}
-C {devices/lab_pin.sym} -20 -310 2 0 {name=p28 sig_type=std_logic lab=4A}
-C {devices/lab_pin.sym} -20 -290 2 0 {name=p29 sig_type=std_logic lab=4B}
+C {devices/lab_pin.sym} -180 -330 0 0 {name=p18 sig_type=std_logic lab=A1}
 C {devices/gnd.sym} 160 240 0 0 {name=l2 lab=GND}
-C {devices/gnd.sym} -180 -210 1 0 {name=l3 lab=GND}
 C {devices/gnd.sym} 160 100 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 160 -30 0 0 {name=l4 lab=GND}
 C {devices/lab_wire.sym} 160 140 0 0 {name=p5 sig_type=std_logic lab=VCC}
-C {devices/lab_wire.sym} 40 -330 2 0 {name=p4 sig_type=std_logic lab=VCC
+C {devices/lab_wire.sym} 0 -330 2 0 {name=p4 sig_type=std_logic lab=VCC
 }
 C {devices/code.sym} 490 -370 0 0 {name=TT_MODELS
 only_toplevel=true
@@ -176,63 +109,43 @@ value="
 
 .control
 run
-write 7408IC_final_testbench.raw
+write final_testbench.raw
 
 .endc
 "}
-C {devices/lab_pin.sym} -180 -230 0 0 {name=p17 sig_type=std_logic lab=2Y}
-C {AND_IC_TopLevel.sym} -30 -270 0 0 {name=x1}
-C {devices/ammeter.sym} 10 -330 1 1 {name=Vmeas savecurrent=true}
+C {devices/ammeter.sym} -30 -330 1 1 {name=Vmeas savecurrent=true}
 C {devices/vsource.sym} 160 -230 0 0 {name=V4 value=1.8 savecurrent=false}
 C {devices/vsource.sym} 160 -360 0 0 {name=V5 value=1.8 savecurrent=false}
-C {devices/lab_pin.sym} 160 -280 0 0 {name=p21 sig_type=std_logic lab=2A}
-C {devices/lab_pin.sym} 160 -410 0 0 {name=p41 sig_type=std_logic lab=2B}
 C {devices/gnd.sym} 160 -180 0 0 {name=l5 lab=GND}
 C {devices/gnd.sym} 160 -310 0 0 {name=l6 lab=GND}
 C {devices/vsource.sym} 370 -230 0 0 {name=V6 value=1.8 savecurrent=false}
 C {devices/vsource.sym} 370 -360 0 0 {name=V7 value=1.8 savecurrent=false}
-C {devices/lab_pin.sym} 370 -280 0 0 {name=p42 sig_type=std_logic lab=3A}
-C {devices/lab_pin.sym} 370 -410 0 0 {name=p43 sig_type=std_logic lab=3B}
 C {devices/gnd.sym} 370 -180 0 0 {name=l7 lab=GND}
 C {devices/gnd.sym} 370 -310 0 0 {name=l8 lab=GND}
-C {devices/vsource.sym} 370 50 0 0 {name=V8 value=1.8 savecurrent=false}
-C {devices/vsource.sym} 370 -80 0 0 {name=V9 value=1.8 savecurrent=false}
-C {devices/lab_pin.sym} 370 0 0 0 {name=p44 sig_type=std_logic lab=4A}
-C {devices/lab_pin.sym} 370 -130 0 0 {name=p45 sig_type=std_logic lab=4B}
-C {devices/gnd.sym} 370 100 0 0 {name=l9 lab=GND}
-C {devices/gnd.sym} 370 -30 0 0 {name=l10 lab=GND}
-C {devices/lab_pin.sym} -200 -10 0 0 {name=p31 sig_type=std_logic lab=1A}
-C {devices/lab_pin.sym} -200 10 0 0 {name=p32 sig_type=std_logic lab=1B}
-C {devices/lab_pin.sym} -440 30 0 0 {name=p33 sig_type=std_logic lab=1Y_parax}
-C {devices/lab_pin.sym} -40 110 0 1 {name=p34 sig_type=std_logic lab=3Y_out}
-C {devices/lab_pin.sym} -40 50 0 1 {name=p35 sig_type=std_logic lab=4Y_out}
-C {devices/lab_pin.sym} -200 50 2 1 {name=p36 sig_type=std_logic lab=2A}
-C {devices/lab_pin.sym} -200 70 2 1 {name=p37 sig_type=std_logic lab=2B}
-C {devices/lab_pin.sym} -40 70 0 1 {name=p38 sig_type=std_logic lab=3A}
-C {devices/lab_pin.sym} -40 90 0 1 {name=p46 sig_type=std_logic lab=3B}
-C {devices/lab_pin.sym} -40 10 2 0 {name=p47 sig_type=std_logic lab=4A}
-C {devices/lab_pin.sym} -40 30 2 0 {name=p48 sig_type=std_logic lab=4B}
-C {devices/gnd.sym} -200 110 1 0 {name=l12 lab=GND}
-C {devices/lab_wire.sym} 20 -10 2 0 {name=p49 sig_type=std_logic lab=VCC
-}
-C {devices/res.sym} -310 30 1 0 {name=R2
-value=1k
-footprint=1206
-device=resistor
-m=1}
-C {devices/gnd.sym} -370 140 0 0 {name=l13 lab=GND}
-C {devices/lab_wire.sym} -260 30 1 0 {name=p50 sig_type=std_logic lab=out_1y_before1}
-C {devices/capa.sym} -370 90 0 0 {name=C2
-m=1
-value=10p
-footprint=1206
-device="ceramic capacitor"}
-C {devices/lab_pin.sym} -200 90 0 0 {name=p51 sig_type=std_logic lab=2Y_out}
-C {AND_IC_TopLevel.sym} -50 50 0 0 {name=x2
-schematic=AND_IC_TopLevel_parax.sim
-
-spice_sym_def="tcleval(.include [file normalize ../mag/AND_IC_TopLevel.sim.spice])"
-
-tclcommand="textwindow [file normalize ../mag/AND_IC_TopLevel.sim.spice]"
-}
-C {devices/ammeter.sym} -10 -10 1 1 {name=Vmeas1 savecurrent=true}
+C {devices/ipin.sym} -590 -340 0 0 {name=p52 lab=A1}
+C {devices/iopin.sym} -650 -160 0 0 {name=p53 lab=GND}
+C {devices/opin.sym} -640 -280 0 0 {name=p54 lab=Y1}
+C {devices/ipin.sym} -590 -310 0 0 {name=p55 lab=B1}
+C {devices/ipin.sym} -590 -250 0 0 {name=p56 lab=A2}
+C {devices/ipin.sym} -590 -220 0 0 {name=p57 lab=B2}
+C {devices/ipin.sym} -590 -120 0 0 {name=p58 lab=A3}
+C {devices/opin.sym} -640 -190 0 0 {name=p59 lab=Y2}
+C {devices/opin.sym} -640 -60 0 0 {name=p60 lab=Y3}
+C {devices/iopin.sym} -650 -30 0 0 {name=p61 lab=VCC}
+C {devices/ipin.sym} -590 -90 0 0 {name=p62 lab=B3}
+C {AND_IC_TopLevel.sym} -140 -280 0 0 {name=x1}
+C {devices/lab_pin.sym} -180 -310 0 0 {name=p1 sig_type=std_logic lab=B1}
+C {devices/lab_pin.sym} -420 -290 0 0 {name=p2 sig_type=std_logic lab=Y1}
+C {devices/lab_pin.sym} -180 -270 0 0 {name=p3 sig_type=std_logic lab=A2}
+C {devices/lab_pin.sym} -180 -250 0 0 {name=p6 sig_type=std_logic lab=B2}
+C {devices/lab_pin.sym} -60 -300 0 1 {name=p7 sig_type=std_logic lab=Y3}
+C {devices/lab_pin.sym} -60 -280 0 1 {name=p8 sig_type=std_logic lab=B3}
+C {devices/lab_pin.sym} -60 -260 0 1 {name=p9 sig_type=std_logic lab=A3}
+C {devices/lab_pin.sym} -60 -240 0 1 {name=p10 sig_type=std_logic lab=Y2}
+C {devices/lab_pin.sym} 160 0 0 0 {name=p11 sig_type=std_logic lab=A1}
+C {devices/lab_pin.sym} 160 -130 0 0 {name=p12 sig_type=std_logic lab=B1}
+C {devices/lab_pin.sym} 160 -280 0 0 {name=p13 sig_type=std_logic lab=A2}
+C {devices/lab_pin.sym} 160 -410 0 0 {name=p14 sig_type=std_logic lab=B2}
+C {devices/lab_pin.sym} 370 -410 0 0 {name=p15 sig_type=std_logic lab=A3}
+C {devices/lab_pin.sym} 370 -280 0 0 {name=p16 sig_type=std_logic lab=B3}
+C {devices/gnd.sym} -180 -230 1 0 {name=l3 lab=GND}
