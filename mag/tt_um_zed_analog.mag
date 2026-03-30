@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1774863651
+timestamp 1774865996
 << metal1 >>
 rect 6495 39111 6630 39117
 rect 4843 33047 4973 33053
@@ -515,8 +515,8 @@ timestamp 1774530888
 transform 1 0 1928 0 1 20957
 box 862 -5005 12821 -1677
 use zedulo_logo  zedulo_logo_0 ~/ttsky-zed-Analog/art
-timestamp 1774530888
-transform 1 0 19170 0 1 3062
+timestamp 1774865853
+transform 1 0 14366 0 1 3200
 box 720 990 8190 7920
 << labels >>
 flabel metal4 s 28766 44952 28826 45152 0 FreeSans 480 90 0 0 clk
