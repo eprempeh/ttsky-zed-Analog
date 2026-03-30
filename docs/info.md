@@ -20,10 +20,10 @@ When both inputs are low, the latch holds its previous state due to the feedback
 The condition s=1 and r=1 is invalid because it forces both outputs low and can lead to an undefined state when released.
 
 For AND IC gate 7408
-The project is a custom silicon implementation of the classic 7408 Quad 2-input AND gate. 
+The project is a custom silicon implementation of the classic 7408 Tri 2-input AND gate. 
 Unlike standard digital projects that use pre-designed logic libraries, this design was built from the transistor level using a CMOS analog design flow.
 
-Logic Implementation: It consists of four independent 2-input AND gates.
+Logic Implementation: It consists of three independent 2-input AND gates.
 Transistor Level: Each gate uses a custom NMOS and PMOS transistor topology to perform the logical AND function.
 Power Domain: The design operates on the VDPWR (1.8V) digital power rail and utilizes VGND as the common ground reference.
 Signal Path: Inputs are received through the dedicated input pads, processed by the CMOS logic, and driven out through the dedicated output pads.
@@ -53,18 +53,18 @@ To verify the functionality of the 7408 AND IC, you must provide logic signals t
 
 3. Monitor the corresponding output.
 
-4. Truth Table Validation: The output 1Y should only go High (1.8V) if both 1A AND 1B are High. In all other combinations (00, 01, 10, 11), the output must remain Low (0V).
+4. Truth Table Validation: The output Y1 should only go High (1.8V) if both A1 AND B1 are High. In all other combinations (00, 01, 10, 11), the output must remain Low (0V).
 
-5. Perform the same check for Gates 2, 3, and 4 using their respective pin mappings defined in the info.yaml 
+5. Perform the same check for Gates 2 and 3 using their respective pin mappings defined in the info.yaml 
 
 ## External hardware
 
 For AND gate IC 7408
 To interact with this project in a physical lab setting, the following external hardware is required:
 
-1. Logic Inputs: 8x Push buttons or DIP switches to provide logic states to the input pins.
+1. Logic Inputs: 6x Push buttons or DIP switches to provide logic states to the input pins.
 
-2. Logic Indicators: 4x LEDs (with current-limiting resistors, typically 330Ω) connected to the output pins to visualize the AND gate outputs.
+2. Logic Indicators: 3x LEDs (with current-limiting resistors, typically 330Ω) connected to the output pins to visualize the AND gate outputs.
 
 3. Breadboard/PMOD: A standard PMOD connector or breadboard interface to bridge the Tiny Tapeout carrier board to your external components.
 
