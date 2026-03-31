@@ -60,16 +60,12 @@ To verify the functionality of the 7408 AND IC, you must provide logic signals t
 ## Pin Connection
 
 ## For SR Latch
-* vdd (VDPWR)
-* vss (VGND)
 * s (ui_in[7])
 * r (ui_in[6])
 * qb (uo_out[4])
 * q (uo_out[3])
 
 ## For AND gate IC 7408
-* VCC (VDPWR)
-* GND (VGND)
 * A1 (ui_in[2])
 * B1 (ui_in[3])
 * Y1 (uo_out[1])
