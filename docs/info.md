@@ -33,7 +33,7 @@ removing the need for internal protection diodes that could interfere with spice
 ## How to test
 
 For SR LATCH
-1. Apply power (vdd and vss) to the circuit.
+1. Apply power 1.8V to vdd of the circuit, and gnd to gnd terminal of the source.
 2. Set both s and r to 0 --> the latch should hold its previous state.
 3. set s=1 and r=0 --> q should go high
 4. Return s to 0 --> q should remain high, i.e state is stored
@@ -55,7 +55,30 @@ To verify the functionality of the 7408 AND IC, you must provide logic signals t
 
 4. Truth Table Validation: The output Y1 should only go High (1.8V) if both A1 AND B1 are High. In all other combinations (00, 01, 10, 11), the output must remain Low (0V).
 
-5. Perform the same check for Gates 2 and 3 using their respective pin mappings defined in the info.yaml 
+5. Perform the same check for Gates 2 and 3 using their respective pin mappings defined in the info.yaml
+
+## Pin Connection
+
+## For SR Latch
+* vdd (VDPWR)
+* vss (VGND)
+* s (ui_in[7])
+* r (ui_in[6])
+* qb (uo_out[4])
+* q (uo_out[3])
+
+## For AND gate IC 7408
+* VCC (VDPWR)
+* GND (VGND)
+* A1 (ui_in[2])
+* B1 (ui_in[3])
+* Y1 (uo_out[1])
+* A2 (ui_in[1])
+* B2 (ui_in[0])
+* Y2 (uo_out[0])
+* A3 (ui_in[5])
+* B3 (ui_in[4])
+* Y3 (uo_out[2])
 
 ## External hardware
 
@@ -71,7 +94,7 @@ To interact with this project in a physical lab setting, the following external 
 4. Power Supply: A stable 1.8V DC source if not using the regulated output from the Tiny Tapeout demonstration board.
 
 
-For SR LATCH
+For SR Latch
 No external hardware is required!
 
 The design operates as a standalone digital logic block and can be tested using simulation tools or integrated into a larger digital system
